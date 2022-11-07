@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comprar Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      
+      Conf. Bs As
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    
+    <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link text-light" href="#">La conferencia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-secondary" href="#">Los oradores</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-secondary" href="#">Conviértete en orador</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" style="color: #28A744" href="#">Comprar tickets</a>
+    </li>
+  </ul>
+        
+</div>
+
+</div>
+  
+</nav>
+
+
+  <div class="container">
+    <div class="row pt-5 m-1" align="center">
+  
+  <div class="col-sm-4 ">
+  <div class="card border-primary py-3" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title">Estudiante</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+    <p class="card-text"><strong>80%</strong></p>
+    <p class="card-text text-muted">* presentar documentación</p>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="card border-info py-3" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title">Trainee</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+    <p class="card-text"><strong>50%</strong></p>
+    <p class="card-text text-muted">* presentar documentación</p>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-4">
+   <div class="card border-warning py-3" style="width: 15rem;">
+  <div class="card-body">
+    <h5 class="card-title">Junior</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+    <p class="card-text"><strong>15%</strong></p>
+    <p class="card-text text-muted">* presentar documentación</p>
+  </div>
+</div>
+</div>
+  
+  
+
+</div>  
+ 
+
+<div class="title text-center pt-5">
+    <p>VENTA</p>
+    <h3>VALOR DE TICKET $200</h3>
+</div>
+
+<form class="p-3" name="Datos de contacto" id="form1">
+ <div class="row pb-3">
+  <div class="col">
+   <input type="nombre" id="inputNombre" class="form-control" placeholder="Nombre" name="nombre">
+  </div>
+   <div class="col">
+    <input type="apellido" id="inputApellido" class="form-control" placeholder="Apellido" name="apellido">
+   </div>
+ </div>
+ 
+ <div class="col">
+    <input type="correo" id="inputCorreo" class="form-control" placeholder="Correo" name="correo">
+   </div>
+
+   <div class="row py-3">
+  <div class="col">
+   <label for="cantidad">Cantidad</label>
+   <input type="number" id="inputCant" class="form-control" min="1" placeholder="Cantidad" name="cantidad">
+  </div>
+   <div class="col-md-6">
+      <label for="Default select example">Categoría</label>
+    <select class="form-select" id="selectCategoria" aria-label="Default select example">
+  <option value="estudiante">Estudiante</option>
+  <option value="trainee">Trainee</option>
+  <option value="junior">Junior</option>
+</select>
+   </div>
+ </div>
+  <div class="row">
+  <div class="col">
+  <div class="card">
+  <div class="card-body" style="background-color: #CDECFB">
+    <h5>Total a pagar: $ <span id="total"></span></h5>
+  </div>
+</div>
+</div>
+</div>
+  <div class="row p-3 m-1" align="center">
+  
+  <div class="col-sm-6 ">
+ 
+<input class="btn col-sm-6" style="width: 15rem; background-color: #91DA26; color: white;" type="reset" value="Borrar">
+</div>
+<div class="col-sm-6 ">
+<input class="btn col-sm-6" style="width: 15rem; background-color: #91DA26; color: white;" id="btnResumen" type="submit" value="Resumen">
+
+</div>
+</div>
+
+</form>
+
+
+</div>
+  
+
+  <nav class="navbar navbar-expand-sm" style="background-color: #1D4358;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="nav mx-auto">
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Preguntas</br>frecuentes</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Contáctanos</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Prensa</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Conferencia</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Términos y</br>condiciones</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link text-light" href="#">Estudiantes</a>
+      </li>
+
+      
+    </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+	<script src="js/final.js"></script>
+</body>
+</html>
